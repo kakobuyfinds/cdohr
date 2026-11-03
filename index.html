@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#233d82">
+  <title>Fishgoo spreadsheet: Produktlinks, Größen &amp; QC verstehen</title>
+  <meta name="description" content="Fishgoo spreadsheet verständlich erklärt: Produktlinks vergleichen, Größen prüfen, QC-Fotos einordnen und Versandkosten für Deutschland besser planen.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Fishgoo spreadsheet: Erst vergleichen. Dann entscheiden.">
+  <meta property="og:description" content="Ein unabhängiger Leitfaden für Produktrecherche, Passform, QC-Fotos und Versandplanung mit schnellen Kategorieeinstiegen.">
+  <meta property="og:site_name" content="hipobuyfind.com · Recherchejournal">
+  <meta property="og:image" content="https://static.nike.com/a/images/t_default/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png">
+  <meta property="og:image:alt" content="Weißer Nike Air Force 1 ’07 in seitlicher Ansicht">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://static.nike.com" crossorigin>
+
+  <!-- index.html: Die kanonische URL erst nach Festlegung der tatsächlichen Veröffentlichungsadresse ergänzen. -->
+
+  <!--
+  Recherche: 03.11.2026. Google ließ sich nicht direkt abrufen; die folgenden zehn
+  Websites wurden über Websuche und Seitenabruf recherchiert. Keine bestätigte
+  Google-Erstseitenrangfolge. Inhalte sind eigenständig formuliert.
+
+  1. fishgoo.app
+     Titel: Fishgoo Guide 2026: App, Spreadsheet, QC & Shipping.
+     Themen: Produktrecherche, QC, Versand; Aufbau: Ratgeber und kurze Antworten.
+
+  2. fishgoo.net
+     Titel: FISHGOO Spreadsheet - Curated China Agent Finds & Weidian Links.
+     Themen: Produktlinks, Kategorien, Einkaufsablauf; Aufbau: Katalog und Hilfebereich.
+
+  3. fishgoowithqc.com
+     Titel: Fishgoo Spreadsheet 2026 — 9,384 Finds with QC Photos.
+     Themen: QC-Fotos, Produktsuche, Linkkonvertierung; Aufbau: Suche und FAQ.
+
+  4. fishgoofind.net/en/
+     Titel: Fishgoo Spreadsheet 2026: Curated Finds, QC Photos & Links.
+     Themen: Filter, Varianten, Produktreferenzen; Aufbau: Katalog und Methodik.
+
+  5. qcradar.com/fishgoo-spreadsheet
+     Titel: FishGoo Spreadsheet 2026 — Preview QC Photos Before You Buy.
+     Themen: QC, Kategorien und Produktvergleiche; Aufbau: Kategorieverzeichnis.
+
+  6. fishgoofinds.com
+     Titel: FishGoo Finds - Discover 5000+ Verified 1:1 Reps...
+     Themen: Produktsuche, Marktplatzlinks, Kategorien; Aufbau: Suche und Weiterleitung.
+
+  7. fishgooreps.com/fishgoo-spreadsheet/
+     Titel: Fishgoo Spreadsheet Guide | Data Fields, Categories & QC.
+     Themen: Datenfelder, Quellen, QC-Belege; Aufbau: Rechercheleitfaden.
+
+  8. jadeship.com/search/spreadsheet/fishgoo
+     Titel: Fishgoo Spreadsheet Search | JadeShip.com.
+     Themen: Tabellenindex, Suchfilter, Marktplatzquellen; Aufbau: Suchindex.
+
+  9. fishgoo.co.uk/guides/how-to-use-fishgoo-spreadsheet
+     Titel: Fishgoo Spreadsheet — UK Shopping Resource & Finds Hub.
+     Themen: Einstieg, Tabellenzeilen, Größen und Versand; Aufbau: Einsteigerartikel.
+
+  10. fishgoo.delivery
+      Titel: FishGoo Spreadsheet | Agent Spreadsheet Hub.
+      Themen: Kategorien, Einkaufsablauf und FAQ; Aufbau: Verzeichnis und Ratgeber.
+
+  Fremde Preis-, Rabatt-, Bestands-, Bewertungs- und Verifizierungsangaben
+  wurden nicht übernommen.
+
+  Nebenbegriffe:
+  Fishgoo Produktsuche; Fishgoo QC Fotos; Fishgoo Größenberatung;
+  Fishgoo Versandplanung.
+
+  Suchintentionen und Longtails sind in den sichtbaren Ratgeberabschnitten verteilt.
+  Markenbilder dienen ausschließlich der visuellen Orientierung,
+  nicht als Bestandsnachweis.
+  -->
+
+  <style>
+    :root {
+      --paper: #f5f3eb;
+      --ink: #19243b;
+      --blue: #233d82;
+      --line: #d6d8dc;
+      --muted: #505c6e;
+      --white: #fff;
+      --accent: #d7e886;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: var(--blue);
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 5px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.12;
+      letter-spacing: -.035em;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 5.5vw, 5.2rem);
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+    }
+
+    h3 {
+      font-size: 1.22rem;
+      line-height: 1.3;
+    }
+
+    p + p {
+      margin-top: 1rem;
+    }
+
+    .wrap {
+      width: min(1240px, calc(100% - 48px));
+      margin: auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .72rem;
+      font-weight: 750;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .wordmark {
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: -.055em;
+      text-decoration: none;
+    }
+
+    .masthead small {
+      font-size: .75rem;
+      color: var(--muted);
+    }
+
+    .categories {
+      padding: 20px 0 28px;
+    }
+
+    .categories .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .category-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      min-height: 54px;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      font-size: .85rem;
+      font-weight: 650;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .category-grid a:hover {
+      background: var(--white);
+    }
+
+    .category-grid span {
+      color: var(--blue);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .hero-copy {
+      padding: clamp(24px, 4vw, 52px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero h1 {
+      margin: 20px 0;
+    }
+
+    .hero-copy > p {
+      max-width: 48ch;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--blue);
+      color: var(--white);
+      padding: 13px 20px;
+      text-decoration: none;
+      font-weight: 650;
+      margin-top: 24px;
+    }
+
+    .button:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .hero-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #eef0f5;
+      min-width: 0;
+    }
+
+    .hero-image img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+
+    .hero-image figcaption {
+      padding: 16px 24px;
+      font-size: .78rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .answer {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .answer strong {
+      color: var(--blue);
+    }
+
+    .section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      max-width: 720px;
+    }
+
+    .section-head .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    .section-head > p {
+      max-width: 32ch;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .brand-grid figure {
+      min-width: 0;
+    }
+
+    .brand-grid img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: contain;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .brand-grid .portrait {
+      object-fit: cover;
+    }
+
+    .brand-grid figcaption {
+      padding-top: 14px;
+    }
+
+    .brand-grid p {
+      font-size: .88rem;
+      color: var(--muted);
+      margin-top: 7px;
+    }
+
+    .note {
+      font-size: .8rem;
+      color: var(--muted);
+      margin-top: 22px;
+    }
+
+    .research {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 48px;
+    }
+
+    .research h2 {
+      margin: 12px 0 20px;
+    }
+
+    .checklist {
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: check;
+    }
+
+    .checklist li {
+      counter-increment: check;
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .checklist li::before {
+      content: "0" counter(check);
+      color: var(--blue);
+      font-size: .8rem;
+      font-weight: 750;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      background: var(--white);
+    }
+
+    caption {
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    td:first-child {
+      font-weight: 650;
+      width: 30%;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .articles article {
+      border-top: 3px solid var(--blue);
+      padding-top: 20px;
+    }
+
+    .articles h3 {
+      margin: 12px 0 16px;
+    }
+
+    .articles p {
+      font-size: .94rem;
+    }
+
+    .articles ul {
+      padding-left: 19px;
+      font-size: .9rem;
+    }
+
+    .journal-tag {
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+
+    .planning {
+      background: var(--blue);
+      color: var(--white);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .planning h3 {
+      font-size: 1.7rem;
+      margin-bottom: 16px;
+    }
+
+    .planning p {
+      font-size: .94rem;
+    }
+
+    .formula {
+      padding: 20px;
+      border: 1px solid #8290b6;
+      font-size: 1.1rem;
+      line-height: 1.9;
+    }
+
+    .faq {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 48px;
+    }
+
+    .faq h2 {
+      margin-top: 12px;
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    details:first-child {
+      border-top: 1px solid var(--line);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      line-height: 1.45;
+      padding-right: 8px;
+    }
+
+    details p {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .closing {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      padding: 36px;
+      background: var(--accent);
+      margin: 40px 0;
+    }
+
+    .closing h2 {
+      font-size: 1.8rem;
+    }
+
+    .closing .button {
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    footer {
+      padding: 12px 0 35px;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    footer p {
+      max-width: 100ch;
+    }
+
+    footer .wordmark {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+
+    @media (min-width: 901px) {
+      .section {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 650px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .category-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .hero-copy {
+        padding: 28px;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 6vw, 4rem);
+      }
+
+      .brand-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .research,
+      .faq {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .articles {
+        grid-template-columns: 1fr;
+      }
+
+      .articles article {
+        max-width: 75ch;
+      }
+
+      .planning {
+        padding: 28px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        width: calc(100% - 32px);
+      }
+
+      .masthead {
+        padding: 18px 0;
+      }
+
+      .masthead small {
+        max-width: 120px;
+        text-align: right;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .category-grid a {
+        font-size: .8rem;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        padding: 26px 22px;
+      }
+
+      .hero-image img {
+        aspect-ratio: 5/4;
+        max-height: 360px;
+      }
+
+      .answer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .section {
+        padding: 42px 0;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head > p {
+        margin-top: 16px;
+        max-width: none;
+      }
+
+      .brand-grid {
+        gap: 14px;
+      }
+
+      .brand-grid h3 {
+        font-size: 1.05rem;
+      }
+
+      .planning {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 24px;
+      }
+
+      .closing {
+        display: block;
+        padding: 24px;
+      }
+
+      .closing .button {
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#webpage",
+        "name": "Fishgoo spreadsheet: Produktlinks, Größen & QC verstehen",
+        "description": "Ein unabhängiger deutschsprachiger Leitfaden für Produktrecherche, Passform, QC-Fotos und Versandplanung.",
+        "inLanguage": "de",
+        "about": {
+          "@type": "Thing",
+          "name": "Fishgoo spreadsheet"
+        },
+        "hasPart": [
+          {"@id": "#artikel-groessen"},
+          {"@id": "#artikel-qc"},
+          {"@id": "#artikel-versand"},
+          {"@id": "#faq"}
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "#artikel-groessen",
+        "headline": "Sneaker und Kleidung: Maße schlagen Größenkürzel",
+        "inLanguage": "de",
+        "description": "Fußlänge, Einlegesohlenmaß und Kleidungsmaße mit der ausgewählten Produktvariante vergleichen.",
+        "isPartOf": {"@id": "#webpage"}
+      },
+      {
+        "@type": "Article",
+        "@id": "#artikel-qc",
+        "headline": "QC-Fotos lesen, ohne zu viel hineinzuinterpretieren",
+        "inLanguage": "de",
+        "description": "Variante, Fotodatum und sichtbare Details prüfen; Fotos ersetzen keine Echtheitsprüfung.",
+        "isPartOf": {"@id": "#webpage"}
+      },
+      {
+        "@type": "Article",
+        "@id": "#artikel-versand",
+        "headline": "Versand nach Deutschland: den Gesamtbetrag planen",
+        "inLanguage": "de",
+        "description": "Warenwert, Gebühren, Versand und mögliche Einfuhrkosten getrennt erfassen.",
+        "isPartOf": {"@id": "#webpage"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq",
+        "inLanguage": "de",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Was ist ein Fishgoo spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ein Fishgoo spreadsheet ist eine Übersicht von Produktreferenzen für die Recherche rund um Fishgoo. Je nach Herausgeber erscheint sie als Tabelle oder Website mit Kategorien, Produktlinks und ergänzenden Notizen. Ein Eintrag bestätigt weder Verfügbarkeit noch Qualität."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie finde ich Schuhe und Hoodies schneller?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Starte mit der passenden Kategorie und grenze nach Modell, Material, Farbe und Maßen ein. Die Kategorieverweise auf dieser Seite führen zu hipobuyfind.com; sie sind keine Zusage einer Fishgoo-Integration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sind QC-Fotos ein Nachweis für Echtheit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. QC-Fotos können sichtbare Merkmale dokumentieren, belegen aber weder die Echtheit noch die langfristige Haltbarkeit. Prüfe Herkunft und belastbare Nachweise zusätzlich; ältere Bilder können eine andere Variante zeigen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche Größe sollte ich wählen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vergleiche die Maße der konkreten Variante mit einem gut passenden eigenen Kleidungsstück oder deiner Fußlänge. EU-, US- und UK-Angaben sind ohne die zugehörige Größentabelle keine verlässliche Passformgarantie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie hoch sind Versandkosten und Lieferzeit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Das hängt von Zielland, Versandlinie, Paketmaßen, Gewicht und den aktuellen Bedingungen ab. Nutze die aktuelle Versandberechnung des jeweiligen Anbieters. Diese Seite nennt keine pauschalen Preise oder garantierten Lieferfristen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gibt es hier eine offizielle Fishgoo-Verbindung?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. Dies ist ein unabhängiger Rechercheleitfaden. Es wird keine offizielle Verbindung zu Fishgoo oder den abgebildeten Marken behauptet. Allgemeine Weiterleitungen führen zu hipobuyfind.com."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/cdohr/">
+</head>
+<body>
+  <header class="wrap masthead">
+    <a class="wordmark" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <small>Das Recherchejournal<br>Deutsch · Ausgabe 01</small>
+  </header>
+
+  <main class="wrap">
+    <nav class="categories" aria-label="Produktkategorien auf hipobuyfind.com">
+      <p class="eyebrow">Direkt zur passenden Kategorie</p>
+
+      <div class="category-grid">
+        <a href="https://hipobuyfind.com/category-911-Shoes.html">
+          Shoes <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">
+          Hoodies/Sweaters <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-913-T-Shirts.html">
+          T-Shirts <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-914-Jackets.html">
+          Jackets <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">
+          Pants/Shorts <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-916-Headwear.html">
+          Headwear <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-917-Sets.html">
+          Sets <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">
+          Underwear/underpants <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-919-Jersey.html">
+          Jersey <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-920-Accessories.html">
+          Accessories <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="titel">
+      <div class="hero-copy">
+        <p class="eyebrow">Produktrecherche mit System</p>
+        <h1 id="titel">
+          Fishgoo spreadsheet.<br>
+          Erst vergleichen.<br>
+          Dann entscheiden.
+        </h1>
+        <p class="muted">
+          Ein guter Fund beginnt mit den richtigen Fragen: Passt die Größe?
+          Gehören die Fotos zur gewählten Variante? Welche Kosten kommen hinzu?
+          Hier findest du einen klaren Einstieg.
+        </p>
+        <a class="button" href="https://www.hipobuyfind.com">
+          Produktideen entdecken <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <figure class="hero-image">
+        <img
+          src="https://static.nike.com/a/images/t_default/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png"
+          width="1000"
+          height="1000"
+          alt="Weißer Nike Air Force 1 ’07 mit weißer Sohle und seitlichem Swoosh"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>
+          01 / Sneaker als Stilreferenz · Nike Air Force 1 ’07<br>
+          Bildbeispiel, keine Aussage zu Sortiment oder Verfügbarkeit.
+        </figcaption>
+      </figure>
+    </section>
+
+    <aside class="answer" aria-label="Das Wichtigste auf einen Blick">
+      <strong>Die kurze Antwort</strong>
+      <p>
+        Ein <b>Fishgoo spreadsheet</b> bündelt Produktreferenzen in einer Tabelle
+        oder einem durchsuchbaren Verzeichnis. Nutze es als Ausgangspunkt:
+        <b>Originalangebot öffnen, Variante abgleichen, Maße prüfen und Gesamtkosten klären.</b>
+        Eine Listenposition allein ist kein Qualitätsnachweis.
+      </p>
+    </aside>
+
+    <section class="section" aria-labelledby="stil">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / Ein Auge für Details</p>
+          <h2 id="stil">Vier Perspektiven auf einen durchdachten Look.</h2>
+        </div>
+        <p>
+          Material, Proportionen und Verarbeitung sind hilfreicher als ein
+          Markenname allein.
+        </p>
+      </div>
+
+      <div class="brand-grid">
+        <figure>
+          <img
+            src="https://sg.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-short-sleeved-t-shirt--HUY12WNPG002_PM2_Front%20view.jpg"
+            width="480"
+            height="600"
+            alt="Milchweißes Louis Vuitton T-Shirt mit flächigem Monogramm in Vorderansicht"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Louis Vuitton / Muster</h3>
+            <p>
+              Bei bedruckten T-Shirts Motivverlauf, Kragenform und Stoffangaben
+              separat vergleichen.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659595532/681264_3HAGJ_2564_001_100_0000_Light-Casquette-en-toileGG-jumbo.jpg"
+            width="480"
+            height="600"
+            alt="Beigefarbene Gucci Jumbo GG Baseballkappe mit braunem Schirmrand"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Gucci / Kopfbedeckung</h3>
+            <p>
+              Kopfumfang messen, Verstellbereich prüfen und die Form des Schirms
+              beachten.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/clic-h-bracelet--700001FP2P-front-wm-1-0-0-64-64_g.jpg"
+            width="480"
+            height="600"
+            alt="Rosafarbenes Hermès Clic H Armband mit silberfarbenem H-Verschluss"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Hermès / Schmuck</h3>
+            <p>
+              Innenmaß, Verschluss und Materialdeklaration sind bei einem
+              Armband entscheidend.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            class="portrait"
+            src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_26_2_LOOK_099_E07-2?wid=480&amp;hei=600&amp;fit=crop&amp;qlt=75"
+            width="480"
+            height="600"
+            alt="Dior-Look mit weißem T-Shirt und dunkler Hose am Model"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Dior / Silhouette</h3>
+            <p>
+              Brustweite, Schulterlinie und Rückenlänge helfen, einen lockeren
+              Schnitt einzuschätzen.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="note">
+        Redaktionelle Bildreferenzen der genannten Marken. Die Abbildungen
+        belegen keine Verfügbarkeit bei hipobuyfind.com, keine Echtheit fremder
+        Angebote und keine Zusammenarbeit.
+      </p>
+    </section>
+
+    <section class="section research" aria-labelledby="recherche">
+      <div>
+        <p class="eyebrow">02 / Fishgoo Produktsuche</p>
+        <h2 id="recherche">Ein Link ist erst der Anfang.</h2>
+        <p class="muted">
+          Wenn du Produktlinks aus einer Tabelle prüfen möchtest, vergleiche
+          die Daten mit dem aktuellen Angebot. Titel können veraltet sein;
+          unterschiedliche Farben können unterschiedliche Artikelnummern haben.
+        </p>
+
+        <ol class="checklist">
+          <li>
+            <div>
+              <b>Quelle festhalten</b><br>
+              Taobao-Links prüfen, Weidian-Angebote vergleichen und bei
+              1688-Produktlinks die Bestellbedingungen lesen.
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>Variante eindeutig machen</b><br>
+              Farbvariante auswählen, Modellnummer abgleichen und Produktfotos
+              derselben Ausführung zuordnen.
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>Offene Fragen klären</b><br>
+              Größentabelle verstehen, Materialangaben prüfen und
+              Rückgabebedingungen vor dem Kauf lesen.
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <caption>Dein Vergleichsraster für die nächste Auswahl</caption>
+          <thead>
+            <tr>
+              <th scope="col">Bereich</th>
+              <th scope="col">Was du konkret prüfen solltest</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sneaker</td>
+              <td>
+                Sneaker nach Fußlänge auswählen; EU- und US-Größen vergleichen;
+                Einlegesohlenmaß anfordern, falls unklar.
+              </td>
+            </tr>
+            <tr>
+              <td>Hoodies &amp; Strick</td>
+              <td>
+                Hoodie-Brustweite messen; Ärmellänge vergleichen; Material
+                und Pflegeetikett lesen.
+              </td>
+            </tr>
+            <tr>
+              <td>T-Shirts &amp; Jerseys</td>
+              <td>
+                T-Shirt-Rückenlänge prüfen; Schulterbreite vergleichen; Druck
+                und Stickerei im Detail ansehen.
+              </td>
+            </tr>
+            <tr>
+              <td>Jacken &amp; Sets</td>
+              <td>
+                Jacken mit Platz für eine Zwischenschicht wählen; bei Sets
+                Oberteil und Hose getrennt messen.
+              </td>
+            </tr>
+            <tr>
+              <td>Hosen &amp; Shorts</td>
+              <td>
+                Bundweite und Innenbeinlänge prüfen; Dehnbarkeit erfragen;
+                Maße eines passenden eigenen Teils nutzen.
+              </td>
+            </tr>
+            <tr>
+              <td>Caps &amp; Schmuck</td>
+              <td>
+                Cap-Kopfumfang messen; Armband-Innenmaß prüfen; Verschluss
+                und Metallangaben vergleichen.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="journal">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">03 / Drei kompakte Fachbeiträge</p>
+          <h2 id="journal">Besser vorbereitet, bevor du bestellst.</h2>
+        </div>
+        <p>
+          Fishgoo Größenberatung, Bildprüfung und Versandplanung verständlich
+          erklärt.
+        </p>
+      </div>
+
+      <div class="articles">
+        <article id="artikel-groessen">
+          <span class="journal-tag">Passform / Ratgeber</span>
+          <h3>Sneaker und Kleidung: Maße schlagen Größenkürzel</h3>
+          <p>
+            Wer Sneaker-Größen umrechnen will, sollte zuerst die Größentabelle
+            des konkreten Modells lesen. Eine pauschale Empfehlung wie „immer
+            eine Nummer größer“ berücksichtigt weder Leistenform noch
+            Fußbreite. Miss beide Füße und prüfe, ob die Tabelle Fußlänge oder
+            Innenmaß meint.
+          </p>
+          <p>
+            Für Kleidung legst du ein passendes Teil flach hin. Vergleiche
+            Brustweite, Schulterbreite und Länge mit den Angaben der gewählten
+            Variante. Achte darauf, ob eine flache Breite oder ein Umfang
+            angegeben ist.
+          </p>
+          <ul>
+            <li>Oversize-Passform anhand von Maßen vergleichen.</li>
+            <li>Bei Unterwäsche Schnitt und Material berücksichtigen.</li>
+            <li>Fehlende Maßangaben vor der Bestellung erfragen.</li>
+          </ul>
+        </article>
+
+        <article id="artikel-qc">
+          <span class="journal-tag">Fishgoo QC Fotos / Einordnung</span>
+          <h3>QC-Fotos lesen, ohne zu viel hineinzuinterpretieren</h3>
+          <p>
+            Um QC-Fotos richtig zu lesen, beginne bei der Zuordnung: Sind
+            Quelle, Farbe und Variante erkennbar? Lagerfotos früherer
+            Bestellungen können Vergleichspunkte liefern, zeigen aber nicht
+            automatisch deinen späteren Artikel. Perspektive und Licht
+            beeinflussen zudem den Farbeindruck.
+          </p>
+          <p>
+            Prüfe Nähte auf Fotos, vergleiche linke und rechte Schuhseite und
+            suche nach Bildern von Sohlen, Verschlüssen und Etiketten.
+            Unscharfe Details bleiben offene Fragen. QC-Fotos sind kein
+            Echtheitszertifikat und sagen wenig über Haltbarkeit oder
+            Tragekomfort aus.
+          </p>
+          <ul>
+            <li>QC-Bilder derselben Variante vergleichen.</li>
+            <li>Fotodatum und Herkunft beachten.</li>
+            <li>Für Echtheitsfragen belastbare Herkunftsnachweise verlangen.</li>
+          </ul>
+        </article>
+
+        <article id="artikel-versand">
+          <span class="journal-tag">Fishgoo Versandplanung / Deutschland</span>
+          <h3>Versand nach Deutschland: den Gesamtbetrag planen</h3>
+          <p>
+            Wenn du Versandkosten nach Deutschland einschätzen möchtest,
+            trenne Warenwert, gegebenenfalls Inlandsversand, Servicegebühren
+            und internationale Fracht. Abhängig von der Versandlinie können
+            tatsächliches Gewicht, Volumengewicht und Paketmaße die Berechnung
+            beeinflussen.
+          </p>
+          <p>
+            Prüfe außerdem, wie mögliche Einfuhrabgaben und Steuern behandelt
+            werden. Die konkrete Abwicklung hängt vom Angebot und den
+            geltenden Bedingungen ab. Zoll- und Steuerfragen solltest du mit
+            aktuellen Angaben der zuständigen Stellen klären. Ein alter
+            Tabellenpreis ist kein Gesamtangebot.
+          </p>
+          <ul>
+            <li>Versandlinien anhand aktueller Bedingungen vergleichen.</li>
+            <li>Paketgewicht und Verpackungsmaße berücksichtigen.</li>
+            <li>Rücksendung und Lieferzeit vor dem Kauf klären.</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="planning" aria-label="Kostenübersicht">
+        <div>
+          <h3>Budget mit Platz für die offenen Posten.</h3>
+          <p>
+            Produktpreise in CNY vergleichen heißt auch: Wechselkurs und
+            mögliche Zahlungsgebühren beachten. Versandkosten können erst
+            später feststehen. Halte Schätzungen und bestätigte Beträge
+            getrennt.
+          </p>
+        </div>
+        <p class="formula">
+          Warenwert + mögliche Inlandsfracht<br>
+          + Service- und Zahlungsgebühren<br>
+          + internationale Versandkosten<br>
+          + gegebenenfalls Einfuhrkosten
+        </p>
+      </aside>
+    </section>
+
+    <section class="section faq" aria-labelledby="fragen">
+      <div>
+        <p class="eyebrow">04 / Direkt beantwortet</p>
+        <h2 id="fragen">Fragen vor dem ersten Fund.</h2>
+        <p class="muted" style="margin-top:18px">
+          Kurze Antworten für eine bewusste Produktauswahl.
+        </p>
+      </div>
+
+      <div>
+        <details open>
+          <summary>Was ist ein Fishgoo spreadsheet?</summary>
+          <p>Ein Fishgoo spreadsheet ist eine Übersicht von Produktreferenzen für die Recherche rund um Fishgoo. Je nach Herausgeber erscheint sie als Tabelle oder Website mit Kategorien, Produktlinks und ergänzenden Notizen. Ein Eintrag bestätigt weder Verfügbarkeit noch Qualität.</p>
+        </details>
+
+        <details>
+          <summary>Wie finde ich Schuhe und Hoodies schneller?</summary>
+          <p>Starte mit der passenden Kategorie und grenze nach Modell, Material, Farbe und Maßen ein. Die Kategorieverweise auf dieser Seite führen zu hipobuyfind.com; sie sind keine Zusage einer Fishgoo-Integration.</p>
+        </details>
+
+        <details>
+          <summary>Sind QC-Fotos ein Nachweis für Echtheit?</summary>
+          <p>Nein. QC-Fotos können sichtbare Merkmale dokumentieren, belegen aber weder die Echtheit noch die langfristige Haltbarkeit. Prüfe Herkunft und belastbare Nachweise zusätzlich; ältere Bilder können eine andere Variante zeigen.</p>
+        </details>
+
+        <details>
+          <summary>Welche Größe sollte ich wählen?</summary>
+          <p>Vergleiche die Maße der konkreten Variante mit einem gut passenden eigenen Kleidungsstück oder deiner Fußlänge. EU-, US- und UK-Angaben sind ohne die zugehörige Größentabelle keine verlässliche Passformgarantie.</p>
+        </details>
+
+        <details>
+          <summary>Wie hoch sind Versandkosten und Lieferzeit?</summary>
+          <p>Das hängt von Zielland, Versandlinie, Paketmaßen, Gewicht und den aktuellen Bedingungen ab. Nutze die aktuelle Versandberechnung des jeweiligen Anbieters. Diese Seite nennt keine pauschalen Preise oder garantierten Lieferfristen.</p>
+        </details>
+
+        <details>
+          <summary>Gibt es hier eine offizielle Fishgoo-Verbindung?</summary>
+          <p>Nein. Dies ist ein unabhängiger Rechercheleitfaden. Es wird keine offizielle Verbindung zu Fishgoo oder den abgebildeten Marken behauptet. Allgemeine Weiterleitungen führen zu hipobuyfind.com.</p>
+        </details>
+      </div>
+    </section>
+
+    <aside class="closing">
+      <div>
+        <p class="eyebrow">Aus Inspiration wird eine bewusste Auswahl</p>
+        <h2 style="margin-top:10px">
+          Dein nächster Schritt: genauer hinsehen.
+        </h2>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">
+        hipobuyfind.com öffnen <span aria-hidden="true">↗</span>
+      </a>
+    </aside>
+  </main>
+
+  <footer class="wrap">
+    <a class="wordmark" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <p>
+      Unabhängiger deutschsprachiger Rechercheleitfaden · Stand:
+      <time datetime="2026-11-03">3. November 2026</time>.
+      Produktbilder: Nike, Louis Vuitton, Gucci, Hermès und Dior.
+      Markenrechte verbleiben bei den jeweiligen Inhabern.
+      Keine offizielle Verbindung oder Empfehlung durch diese Marken oder
+      Fishgoo. Inhalte dienen der Orientierung; aktuelle Angebotsbedingungen
+      sind beim jeweiligen Anbieter zu prüfen.
+    </p>
+  </footer>
+</body>
+</html>
